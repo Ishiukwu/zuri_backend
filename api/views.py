@@ -6,9 +6,13 @@ from rest_framework.decorators import api_view
 
 @api_view(['GET'])
 def getData(request):
-    person = {
-        'name': 'maxim k',
-        'current_day': 'Thursday',
-        'utc_time': datetime.datetime.now()
-    }
+    person ={
+        "slack_name": "Maxim K",
+        "current_day": "Thursday",
+        "utc_time": datetime.datetime.now(),
+        "track": "backend",
+        "github_file_url": "https://github.com/Ishiukwu/zuri_backend/tree/main/api",
+        "github_repo_url": "https://github.com/Ishiukwu/zuri_backend",
+        "status_code": 200,
+   }
     return Response(person)
