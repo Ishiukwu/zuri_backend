@@ -1,4 +1,4 @@
-import datetime
+from datetime import datetime
 
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
@@ -8,8 +8,8 @@ from rest_framework.decorators import api_view
 def getData(request):
     person ={
         "slack_name": "Maxim K",
-        "current_day": "Thursday",
-        "utc_time": datetime.datetime.now(),
+        "current_day": "Friday",
+        "utc_time": datetime.now(),
         "track": "backend",
         "github_file_url": "https://github.com/Ishiukwu/zuri_backend/tree/main/api",
         "github_repo_url": "https://github.com/Ishiukwu/zuri_backend",
