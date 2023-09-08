@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-vmu*)%$*56_7zs3r-dsh^-^8&1&kqz*2q=t2mgt-9dtdk3#7=v
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', '*']
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
