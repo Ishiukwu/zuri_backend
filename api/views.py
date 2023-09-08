@@ -5,7 +5,7 @@ from rest_framework.decorators import api_view
 
 
 @api_view(['GET'])
-def getData(request):
+def getData(request, format=None):
     person ={
         "slack_name": "Maxim K",
         "current_day": datetime.datetime.today().strftime("%A"),
