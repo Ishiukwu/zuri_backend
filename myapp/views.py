@@ -7,7 +7,7 @@ def getData(request):
     track = request.GET.get('track', 'backend')
 
     current_day = datetime.now().strftime("%A")
-    utc_time = (datetime.utcnow() + timedelta(minutes=2)).strftime("%Y-%m-%dT%H:%M:%SZ")
+    utc_time = now = datetime.datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')
 
     github_file_url = "https://github.com/Ishiukwu/zuri_backend/tree/main/myapp"
     github_repo_url = "https://github.com/Ishiukwu/zuri_backend"
